@@ -6,18 +6,11 @@ class Out extends Component {
   render() {
     return (
       <div style={style.container}>
-        <Product right="true"></Product>
-        <Product></Product>
-        <Product></Product>
-        <Product></Product>
-        <Product></Product>
-        <Product></Product>
-        <Product></Product>
-        <Product></Product>
-        <Product></Product>
-        <Product></Product>
-        <Product></Product>
-        <Product></Product>
+        <Product right image="bag.jpg"></Product>
+        <Product right image="estuche.jpg"></Product>
+        <Product right image="hat.jpg"></Product>
+        <Product image="bigbag.jpeg"></Product>
+        <Product left image="minibag.jpg"></Product>
       </div>
     );
   }

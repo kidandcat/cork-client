@@ -13,8 +13,8 @@ class Out extends Component {
     this.anim ? this.anim.pause():null;
     this.anim = anime({
       targets: '#' + this.id,
-      scale: 1.5,
-      rotate: this.props.right?5:-5,
+      scale: 1.8,
+      rotate: this.props.right?5:this.props.left?-5:0,
       duration: 2000,
       direction: 'normal'
     });
@@ -34,7 +34,7 @@ class Out extends Component {
   render() {
     return (
       <div id={this.id} style={style.product} onMouseEnter={this.zoomIn} onMouseLeave={this.zoomOut}>
-        <img src="/static/products/bag.jpg" style={style.image}/>
+        <img src={"/static/products/" + this.props.image} style={style.image}/>
       </div>
     );
   }
