@@ -1,11 +1,24 @@
-import React, {Component} from 'react';
-import Layout from 'Layout/Layout';
+import React, {Component} from 'react'
+import Layout from 'Layout/Layout'
+import Product from 'Index/Product'
+let style;
 
 class Index extends Component {
   render() {
     return (
       <Layout>
-        index
+          <Product right="true"></Product>
+          <Product></Product>
+          <Product></Product>
+          <Product></Product>
+          <Product></Product>
+          <Product></Product>
+          <Product></Product>
+          <Product></Product>
+          <Product></Product>
+          <Product></Product>
+          <Product></Product>
+          <Product></Product>
       </Layout>
     );
   }
